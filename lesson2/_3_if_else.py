@@ -13,22 +13,22 @@
 """
 
 # необходимо узнать, число отрицательное, положительное или ноль
-a = int(input('a = '))
+a = int(input("a = "))
 
 # 1 вариант
 if a > 0:
-    answer = 'positive'
+    answer = "positive"
 elif a < 0:
-    answer = 'negative'
+    answer = "negative"
 else:
-    answer = 'zero'
+    answer = "zero"
 
-print(answer, '(standart if-else)')
+print(answer, "(standart if-else)")
 
 # 2 вариант
-answer = 'positive' if a > 0 else 'negative' if a < 0 else 'zero'
+answer = "positive" if a > 0 else "negative" if a < 0 else "zero"
 
-print(answer, '(string if-else)')
+print(answer, "(string if-else)")
 
 
 # Создание переменной в условии if c помощью оператора :=

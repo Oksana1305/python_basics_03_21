@@ -10,24 +10,23 @@ a = a ** 3
 
 # 4. Уменьшить b в 25 раз
 # b = b / 25
-b /= 43
-
-b = abs(b)
+b /= 25
 
 print("a =", a, "b =", b)
 
 # 5. Поменять значения переменных a и b местами
 a, b = b, a
 
-a = round(a, 3)
-
 print("a =", a, "b =", b)
 
 # 6. Вывести на экран переменную, которая больше
 
+if a > b:
+    print(a)
+elif a < b:
+    print(b)
+else:
+    print(a, "==", b)
+
+# Либо использовать встроенную функцию max
 print(max(a, b))
-
-import math
-
-print(math.pi)
-print(math.cos(0.13))
