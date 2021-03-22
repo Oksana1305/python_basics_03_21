@@ -6,4 +6,20 @@
 """
 import random
 
-number = random.randint(1, 10)
+count = 0  # счеткик
+while True:
+    # генерируем 2 случайных числа от 1 до 10
+    number_1 = random.randint(1, 10)
+    number_2 = random.randint(1, 10)
+
+    # формируем выражение и запрашиваем ответ
+    print(number_1, "+", number_2, "=", end=" ")
+    answer = int(input())
+
+    if answer == number_1 + number_2:
+        # если ответ верный увеличиваем счетчик
+        count += 1
+    else:
+        # иначе, выводим количество решенных выражений и прерываем цикл
+        print("Game over:", count)
+        break
